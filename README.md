@@ -1,8 +1,24 @@
-# React + Vite
+L-15:-
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- create a vite+React application
+- Remove unneccessary code And create a Hello World!
+- Install Tailwind
+- Install Daisy UI
+- Add NavBar component to app.jsx
+- install react-router-dom
+- create <BrowserRouter/> <Routes/> <Routes/>
+- create <Outlet/>
+- Create <Footer> <Login> Pages
 
-Currently, two official plugins are available:
+L-16
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Install axios
+- install cors in BE
+- whenever you are making an api call sp pass axios=>{withCredentials:true}
+
+- RTK: steps:-
+1.  npm install @reduxjs/toolkit react-redux
+2.  create store(appStore) by suing configureStore()
+3.  provide the store(appStore) to our app by using <Provider/>
+4.  create a slice & export actions & reducer
+5.  To add this userSlice to my appStore
