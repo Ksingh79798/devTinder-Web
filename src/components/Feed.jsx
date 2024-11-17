@@ -8,8 +8,8 @@ const Feed = () => {
   // read the feed
   const dispatch = useDispatch();
   const feedData = useSelector((store) => store.feed);
-  console.log(useSelector((store) => store.feed));
-  console.log("FeedData:-> ", feedData);
+  console.log(feedData);
+  // console.log(useSelector((store) => store.feed));
 
   const getFeed = async () => {
     if (feedData) return;
@@ -19,9 +19,7 @@ const Feed = () => {
       const res = await axios.get(BASE_URL + "/feed", {
         withCredentials: true,
       });
-      console.log("feed res:->", res?.data?.data);
       dispatch(addFeed(res?.data?.data));
-      console.log("hellop");
     } catch (err) {
       console.error(err.message);
     }

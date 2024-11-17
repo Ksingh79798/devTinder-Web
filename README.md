@@ -34,3 +34,5 @@ L-17
 - If token is not present, redirect user to login page
 - Logout feature build:- clear the cookies
 - Profile page build
+- get the feed and add the feed in the store
+- build the UserCard
