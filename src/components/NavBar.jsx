@@ -26,7 +26,7 @@ const NavBar = () => {
       console.error(err.message);
     }
   };
-  console.log(user);
+  // console.log(user);
   return (
     <div>
       <div className="navbar bg-base-100">
