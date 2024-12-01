@@ -3,12 +3,13 @@ import { BASE_URL } from "../utils/constants";
 import axios from "axios";
 import { addFeed } from "../utils/feedSlice.jsx";
 import { useEffect } from "react";
-import UserCard from "./userCard.jsx";
+import UserCard from "./UserCard.jsx";
 const Feed = () => {
   // read the feed
-  const dispatch = useDispatch();
   const feedData = useSelector((store) => store.feed);
-  console.log(feedData);
+  const dispatch = useDispatch();
+  console.log("feed data:-", feedData);
+
   // console.log(useSelector((store) => store.feed));
 
   const getFeed = async () => {

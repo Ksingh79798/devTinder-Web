@@ -46,7 +46,8 @@ const NavBar = () => {
               className="input input-bordered w-24 md:w-auto"
             />
           </div> */}
-
+          
+            {/* Profile photo */}
             <div className="dropdown dropdown-end flex mx-5">
               <div
                 tabIndex={0}
@@ -64,7 +65,7 @@ const NavBar = () => {
                 <li>
                   <Link to="/profile" className="justify-between">
                     Profile
-                    <span className="badge">New</span>
+                    {/* <span className="badge">New</span> */}
                   </Link>
 
                   {/* <a className="justify-between">
