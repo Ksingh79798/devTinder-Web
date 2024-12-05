@@ -2,6 +2,8 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
+
+// existing friends here
 import { useEffect } from "react";
 import { BASE_URL } from "../utils/constants";
 import axios from "axios";
