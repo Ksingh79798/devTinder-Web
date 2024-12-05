@@ -46,7 +46,7 @@ const NavBar = () => {
               className="input input-bordered w-24 md:w-auto"
             />
           </div> */}
-          
+
             {/* Profile photo */}
             <div className="dropdown dropdown-end flex mx-5">
               <div
@@ -74,8 +74,7 @@ const NavBar = () => {
                   </a> */}
                 </li>
                 <li>
-                  <Link to="/login">Login</Link>
-                  {/* <a>Settings</a> */}
+                  <Link to="/connections">Connections</Link>
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>

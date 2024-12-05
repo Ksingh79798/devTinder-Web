@@ -35,4 +35,10 @@ L-17
 - Logout feature build:- clear the cookies
 - Profile page build
 - get the feed and add the feed in the store
-- build the UserCard
+- build the UserCard on feed
+- Edit profile features
+- Show Toast msg on save of profile 
+- make feature of gender dropdown menu
+
+L-18
+- See all my connections
