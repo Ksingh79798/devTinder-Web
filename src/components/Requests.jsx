@@ -45,14 +45,15 @@ const Requests = () => {
   }, []);
 
   if (!requests) return;
-  if (requests.length === 0) return <h1>No Request Found</h1>;
+  if (requests.length === 0)
+    return <h1 className="flex justify-center my-10">No Request Found</h1>;
 
   return (
     <div className="text-center my-10">
       <h1 className="text-bold text-white text-3xl">Requests</h1>
       {requests.map((request) => {
         const { _id, firstName, lastName, age, photoUrl, gender, about } =
-          request?.toUserId;
+          request?.fromUserId;
         {
           return (
             <div
