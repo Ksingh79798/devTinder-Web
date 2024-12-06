@@ -35,7 +35,7 @@ const EditProfile = ({ user }) => {
       // clear the toast
       setTimeout(() => {
         setShowToast(false);
-      }, 3000);
+      }, 2000);
     } catch (err) {
       setError(err.response.data);
     }
