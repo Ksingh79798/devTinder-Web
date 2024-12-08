@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import { useDispatch } from "react-redux";
 import { BASE_URL } from "../utils/constants";
