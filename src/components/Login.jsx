@@ -129,7 +129,7 @@ const Login = () => {
               </button>
             </div>
             <p
-              className="m-auto py-2"
+              className="m-auto py-2 cursor-pointer"
               onClick={() => setIsLoginForm((value) => !value)}
             >
               {isLoginForm

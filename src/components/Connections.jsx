@@ -41,16 +41,16 @@ const Connections = () => {
         return (
           <div
             key={_id}
-            className="flex m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto"
+            className="flex flex-col md:flex-row md:w-11/12 items-center   m-4 p-4 rounded-lg bg-base-300 w-full mx-auto"
           >
-            <div>
+            <div className="my-1 md:w-3/12  lg:w-2/12">
               <img
-                className="w-20 rounded-full h-20"
+                className="w-32  rounded-full object-cover h-32"
                 alt="photo"
                 src={photoUrl}
               ></img>
             </div>
-            <div className="text-left mx-4">
+            <div className="text-left mx-4 w-9/12 lg:w-9/12 ">
               <h2 className="font-bold text-xl">
                 {firstName + " " + lastName}
               </h2>

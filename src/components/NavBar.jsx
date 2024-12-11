@@ -29,15 +29,18 @@ const NavBar = () => {
   // console.log(user);
   return (
     <div>
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
+      <div className="flex flex-col sm:flex-row justify-center navbar bg-base-100">
+        <div className=" flex-1">
           {/* <a className="btn btn-ghost text-xl">🧑‍🤝‍🧑devTinder</a> */}
-          <Link to="/" className="btn btn-ghost text-xl">
+          <Link
+            to="/"
+            className="btn btn-ghost text-xl md:text-2xl lg:text-3xl"
+          >
             🧑‍🤝‍🧑devTinder
           </Link>
         </div>
         {user && (
-          <div className="flex-none gap-2">
+          <div className="flex-none gap-2 md:text-2xl ">
             <div> Welcome, {user.firstName + " " + user.lastName}</div>
             {/* <div className="form-control">
             <input
@@ -48,13 +51,13 @@ const NavBar = () => {
           </div> */}
 
             {/* Profile photo */}
-            <div className="dropdown dropdown-end flex mx-5">
+            <div className="dropdown dropdown-end flex mx-5 ">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost btn-circle avatar"
+                className="btn btn-ghost btn-circle avatar w-full"
               >
-                <div className="w-10 rounded-full">
+                <div className="w-20 h-20 md:w-36 md:h-36 rounded-full">
                   <img alt="user photo" src={user.photoUrl} />
                 </div>
               </div>

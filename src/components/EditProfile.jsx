@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import UserCard from "./UserCard";
@@ -17,6 +18,7 @@ const EditProfile = ({ user }) => {
   const [gender, setGender] = useState(user.gender);
   const [about, setAbout] = useState(user.about);
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
+
   const [error, setError] = useState("");
   const [showToast, setShowToast] = useState(false);
 
@@ -132,9 +134,10 @@ const EditProfile = ({ user }) => {
               {/* photoUrl*/}
               <div>
                 <label className="form-control w-full max-w-xs">
-                  <div className="label">
+                  <div className="label grid">
                     <span className="label-text">Photo Url :</span>
                   </div>
+
                   <input
                     type="text"
                     value={photoUrl}
